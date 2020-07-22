@@ -8,7 +8,7 @@ import {ServicesService} from "./modules/core/services.service";
 })
 export class AppComponent {
 
-  private title:string;
+  public title:string;
 
   constructor(servicesService: ServicesService) {
     this.title = servicesService.demo();
