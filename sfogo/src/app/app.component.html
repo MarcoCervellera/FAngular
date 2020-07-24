@@ -4,3 +4,10 @@
 <div>
   <button (click)="cliccato()">Cliccami</button>
 </div>
+<div>
+  <input type="text" name="message" [(ngModel)]="message">
+  <button (click)="aggiungi()">Aggiungi!</button>
+</div>
+<div>
+  <p *ngFor="let message of messages"> {{message}} </p>
+</div>

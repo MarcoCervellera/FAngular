@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -12,5 +13,10 @@ export class AppComponent {
   cliccato() {
     this.changeColor("mondo", "blue");
   }
+  aggiungi(){
+    this.messages.push(this.message);
+  }
   title = 'sfogo';
+  messages: string[] = [];
+  message: string;
 }
